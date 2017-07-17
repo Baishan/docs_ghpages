@@ -3,7 +3,7 @@ defmodule DocsGhpages.Mixfile do
 
   def project do
     [ app: :docs_ghpages,
-      version: "0.0.2",
+      version: "0.0.3",
       deps: deps ]
   end
 
@@ -12,9 +12,7 @@ defmodule DocsGhpages.Mixfile do
     []
   end
 
-  # Returns the list of dependencies in the format:
-  # { :foobar, "0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
-    [{ :ex_doc, github: "elixir-lang/ex_doc" }]
+    [{:ex_doc, "~> 0.14", only: :dev, runtime: false}]
   end
 end
