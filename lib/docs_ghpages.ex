@@ -5,6 +5,8 @@ defmodule Mix.Tasks.Docs.Ghpages do
   A task for uploading documentation to gh-pages.
   """
 
+  @shortdoc "A task for uploading documentation to gh-pages."
+
   defp run!(command) do
     if Mix.shell.cmd(command) != 0 do
       raise Mix.Error, message: "command `#{command}` failed"
