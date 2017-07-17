@@ -4,7 +4,7 @@ defmodule DocsGhpages.Mixfile do
   def project do
     [ app: :docs_ghpages,
       version: "0.0.3",
-      deps: deps ]
+      deps: deps() ]
   end
 
   # Configuration for the OTP application
