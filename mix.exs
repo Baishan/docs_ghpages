@@ -3,7 +3,7 @@ defmodule DocsGhpages.Mixfile do
 
   def project do
     [ app: :docs_ghpages,
-      version: "0.0.3",
+      version: "0.1.1",
       deps: deps() ]
   end
 
